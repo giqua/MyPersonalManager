@@ -50,11 +50,11 @@ L'app "My Personal Manager" è rivolta a individui di diverse fasce d'età e con
 
 "My Personal Manager" offre numerosi benefici e un valore significativo per gli utenti, tra cui:
 
-- Organizzazione migliorata
-- Pianificazione efficiente
-- Personalizzazione flessibile
-- Condivisione e collaborazione
-- Accesso multi-piattaforma
+- Organizzazione migliorata: Gli utenti possono tenere traccia di tutti gli impegni in un unico luogo, visualizzando il calendario e le attività in modo chiaro e organizzato.
+- Pianificazione efficiente: L'app fornisce strumenti di pianificazione intuitivi che consentono agli utenti di programmare gli eventi, impostare promemoria e gestire le attività in modo efficiente.
+- Personalizzazione flessibile: Gli utenti possono personalizzare l'app secondo le proprie preferenze, inclusi i domini personalizzati, le impostazioni di notifica e le opzioni di visualizzazione.
+- Condivisione e collaborazione: La funzionalità Famiglia consente agli utenti di collegarsi con altri utenti e condividere informazioni pertinenti, semplificando la pianificazione e la gestione condivisa.
+- Accesso multi-piattaforma: Grazie alla sincronizzazione e all'accesso da più dispositivi, gli utenti possono accedere ai propri dati ovunque si trovino, garantendo la continuità delle attività e la sincronizzazione delle informazioni.
 
 ## 3. Requisiti Funzionali
 
@@ -85,8 +85,8 @@ In questa sezione vengono elencati i requisiti funzionali dell'applicazione "My 
 ### 3.4 Funzionalità Famiglia per la condivisione di informazioni tra utenti collegati
 
 - L'app deve permettere agli utenti di collegarsi con altri utenti tramite la funzionalità Famiglia.
-- Gli utenti collegati devono poter condividere eventi, att
-
+- Gli utenti collegati devono poter condividere eventi, attività e informazioni rilevanti.
+- L'app deve fornire opzioni di controllo delle autorizzazioni per la condivisione delle informazioni.
 
 ## 4. Requisiti Non Funzionali
 
@@ -120,4 +120,73 @@ In questa sezione vengono elencati i requisiti non funzionali dell'applicazione 
 - L'applicazione deve essere compatibile con i principali sistemi operativi mobili, come iOS e Android.
 - La versione web dell'app deve essere compatibile con i principali browser, come Chrome, Firefox, Safari, ecc.
 
-Questi requisiti non funzionali sono essenziali per garantire prestazioni ottimali, usabilità intuitiva, sicurezza dei dati, scalabilità e compatibilità multi-piattaforma dell'applicazione "My Personal Manager".
+## 5. Requisiti di Integrazione
+
+In questa sezione vengono elencati i requisiti di integrazione per l'applicazione "My Personal Manager".
+
+### 5.1 Integrazione con i Contatti
+
+- L'app deve consentire agli utenti di importare i contatti dal proprio dispositivo per facilitare la creazione di eventi e attività legati a persone specifiche.
+- Gli utenti devono poter associare i contatti agli eventi e alle attività per una gestione più completa delle informazioni.
+
+### 5.2 Integrazione con il Calendario del Dispositivo
+
+- L'app deve essere in grado di sincronizzarsi con il calendario predefinito del dispositivo dell'utente.
+- Gli eventi creati nell'app devono essere visualizzati nel calendario del dispositivo e viceversa.
+- Le modifiche apportate ai eventi nel calendario del dispositivo devono essere riflesse nell'app "My Personal Manager".
+
+### 5.3 Integrazione con le Notifiche di Sistema
+
+- L'app deve essere in grado di inviare notifiche push agli utenti per avvisi e promemoria sugli eventi.
+- Le notifiche devono essere visualizzate correttamente sia sulle versioni iOS che Android del sistema operativo.
+
+### 5.4 Integrazione con le Piattaforme Cloud
+
+- L'app deve supportare l'integrazione con piattaforme cloud popolari come Google Drive o Dropbox per il backup e il ripristino dei dati.
+- Gli utenti devono poter effettuare il backup dei loro dati su una piattaforma cloud e ripristinarli in caso di perdita o cambio di dispositivo.
+
+### 5.5 Integrazione con le API dei Servizi Esterni
+
+- L'app deve consentire l'integrazione con servizi esterni, come servizi di mappe o previsioni meteorologiche, per arricchire le informazioni sugli eventi e le attività.
+- Gli utenti devono poter accedere a tali servizi direttamente dall'app "My Personal Manager".
+
+## 6. Interfaccia Utente
+
+L'interfaccia utente dell'applicazione "My Personal Manager" sarà progettata per offrire un'esperienza utente intuitiva, moderna e facile da usare. Saranno utilizzati elementi di design coerenti con le linee guida delle principali piattaforme mobili, come iOS e Android, per garantire familiarità agli utenti. L'interfaccia utente comprenderà:
+
+- Una schermata principale con la visualizzazione del calendario, mostrando gli eventi pianificati.
+- Un menu di navigazione per accedere alle diverse sezioni dell'app, come il calendario, le attività, i domini personalizzati, la funzionalità Famiglia, le impostazioni e altro.
+- Form per l'inserimento dei dettagli degli eventi, inclusi titolo, data, ora, durata e descrizione.
+- Viste diverse per il calendario, tra cui vista mensile, settimanale e giornaliera.
+- Opzioni per la modifica e la cancellazione degli eventi esistenti.
+- Elenco delle attività da svolgere, con la possibilità di contrassegnarle come completate.
+- Schermate di gestione dei domini personalizzati, permettendo agli utenti di creare, modificare ed eliminare domini.
+- Funzionalità di condivisione tramite la funzionalità Famiglia, consentendo agli utenti di collegarsi con altri utenti e condividere eventi e informazioni.
+- Impostazioni personalizzabili, come le preferenze di notifica, le opzioni di visualizzazione e altro.
+
+## 7. Diagramma dei Casi d'Uso
+
++---------------------+
+| Utente |
++---------------------+
+| - Creazione di un nuovo evento
+| - Visualizzazione e modifica di un evento
+| - Condivisione di un evento con un altro utente
++---------------------+
+
+
+## 8. Glossario
+
+- **Applicazione**: si riferisce all'applicazione "My Personal Manager", progettata per la gestione degli impegni personali.
+- **Evento**: rappresenta un impegno specifico con un titolo, una data, un'ora, una durata e una descrizione.
+- **Calendario**: la visualizzazione dei giorni, delle settimane o dei mesi in cui gli eventi sono pianificati.
+- **Attività**: una specifica azione o compito da svolgere, da associare agli eventi o ai domini personalizzati.
+- **Dominio personalizzato**: una categoria personalizzata che può essere assegnata agli eventi o alle attività, come lato economico, salute, istruzione, ecc.
+- **Funzionalità Famiglia**: la possibilità di collegarsi con altri utenti e condividere eventi e informazioni.
+- **Notifiche**: avvisi o promemoria inviati agli utenti per gli eventi o le attività imminenti.
+- **Sincronizzazione**: la capacità di mantenere i dati aggiornati su più piattaforme e dispositivi.
+- **Backup e ripristino**: la possibilità di effettuare una copia di sicurezza dei dati e ripristinarli in caso di perdita o cambio di dispositivo.
+
+## 9. Appendici
+
+Nessun allegato o documento di supporto al momento.
